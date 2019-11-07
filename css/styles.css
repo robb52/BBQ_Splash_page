@@ -9,6 +9,7 @@ body {
 h1 {
   font-size: 2.25rem;
   font-weight: 300;
+  color: #fff;
 }
 
 h1 + p {
@@ -44,3 +45,11 @@ h2 + p {
 strong {
   font-weight: 900;
 }
+
+.intro {
+  background-color: #404040;
+  background-image: url(../images/bbq-ribs.jpeg);
+  background-size: cover;
+  padding: 0 .25em 1em;
+}
+
