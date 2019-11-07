@@ -10,6 +10,7 @@ h1 {
   font-size: 2.25rem;
   font-weight: 300;
   color: #fff;
+  margin: 2em 0;
 }
 
 h1 + p {
@@ -17,16 +18,19 @@ h1 + p {
   font-weight: 900;
   font-size: 1.3rem;
   text-transform: uppercase;
+  margin: 0;
 }
 
 h2 {
   font-size: 1.3rem;
+  margin: 0;
 }
 
 h2 + p {
   color: #F18119;
   font-weight: 900;
   font-size: 1rem;
+  margin-top: 0;
   text-transform: uppercase;
 }
 
@@ -35,6 +39,7 @@ h2 + p {
   font-weight: 900;
   color: #F18119;
   text-transform: uppercase;
+  order: -1;
 }
 
 .fine-print {
@@ -48,8 +53,32 @@ strong {
 
 .intro {
   background-color: #404040;
-  background-image: url(../images/bbq-ribs.jpeg);
+  background-image: linear-gradient(
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),url(../images/bbq-ribs.jpeg);
   background-size: cover;
-  padding: 0 .25em 1em;
+  padding: 0 .5em 2em;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-content {
+  padding: 2em 1em;
+}
+
+@media (min-width: 500px) {
+  body {
+    font-size: 1.125rem;
+  }
+
+  h1 {
+    font-size: 3.5rem;
+  }
+
+  h2,
+  h1 + p {
+    font-size: 1.75rem;
+  }
 }
 
