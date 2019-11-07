@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   font-family: 'Source Sans Pro', sans-serif;
@@ -58,6 +62,7 @@ strong {
       rgba(0, 0, 0, 0.5)
     ),url(../images/bbq-ribs.jpeg);
   background-size: cover;
+  background-position: center;
   padding: 0 .5em 2em;
   display: flex;
   flex-direction: column;
@@ -70,6 +75,7 @@ strong {
 @media (min-width: 500px) {
   body {
     font-size: 1.125rem;
+    display: flex;
   }
 
   h1 {
@@ -79,6 +85,12 @@ strong {
   h2,
   h1 + p {
     font-size: 1.75rem;
+  }
+
+  .intro,
+  .main-content {
+    width: 50%;
+    min-height: 100vh; 
   }
 }
 
